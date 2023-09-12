@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Login</title>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+        <header>
+		<img class='login' src='img/LOGO,.png'>
+		<nav>
+		<ol>
+		<li><a href='index.html'>Página Inicial</a></li>
+		</ol>
+		</nav>
+		</header>
+		
+	
+    <main>
+	
+	<img height="220px" widht="220px" src='img/login.jpg'>
+	
+	
+      <form action="/login.php" method="post">
+	<p>
+	  <label for="user">Nome:</label>
+	  <input type="text" name="user" id="user" maxlength="15" pattern="[aA-zZ\s]+$" required>
+	</p>
+	<p>
+	  <label for="usern">Sobrenome:</label>
+	  <input type="text" name="user" id="usern" maxlength="15" pattern="[aA-zZ\s]+$" required>
+	</p>
+	<p>
+	  <label for="data">Data de Nascimento:</label>
+	  <input type="data" name="data" id="data" maxlength="10" pattern="[0-9] {2}\/[0-9]{2}\/[0-9]{4}$" required>
+	</p>
+	<p>
+	  <label for="email">Insira seu email:</label>
+	  <input type="text" name="email" id="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+	</p>
+	<p>
+	   <label for="senha">Digite uma Senha</label>
+	   <input type="password" name="senha" id="senha" minlength="8" required>
+	</p>
+	<p>
+	<input id="contrato" name="contrato" type="checkbox" value="sim">
+	<label for="contrato">Aceito os termos de condição.</label>
+	</p>
+	<input type="submit" value="Entrar">
+	</form>
+	
+    </main>
+	
+	<footer>SERIES By- Manu Nolio<br>
+	Obrigada por utilizar o Site!
+	</footer>
+</body>
+</html>
